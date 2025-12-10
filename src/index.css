@@ -303,3 +303,33 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary) / 0.5);
 }
+
+@keyframes phoneFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes phoneRotate {
+  0% { transform: rotate(-1deg); }
+  50% { transform: rotate(4deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+@keyframes screenGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-phoneFloat {
+  animation: phoneFloat 2s ease-in-out infinite;
+}
+
+.animate-phoneRotate {
+  animation: phoneRotate 4s ease-in-out infinite;
+}
+
+.animate-screenGradient {
+  animation: screenGradient 3s ease infinite;
+}

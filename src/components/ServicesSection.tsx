@@ -8,7 +8,7 @@ const services = [
     subtitle: "Passenger & Rider Transport",
     description: "Safe, reliable, and affordable transportation at your fingertips. Book a ride in seconds and travel with verified drivers.",
     color: "from-blue-500 to-cyan-500",
-    features: ["Real-time tracking", "Verified drivers", "Multiple vehicle options", "Cashless payments"],
+    features: ["Real-time tracking", "Verified drivers", "Multiple vehicle options", "Cashless payments", "Live meter"],
   },
   {
     icon: UtensilsCrossed,
@@ -16,7 +16,7 @@ const services = [
     subtitle: "Online Food Delivery",
     description: "Craving something delicious? Order from hundreds of restaurants and enjoy doorstep delivery within minutes.",
     color: "from-orange-500 to-red-500",
-    features: ["500+ restaurants", "Live order tracking", "Special offers", "Dietary filters"],
+    features: ["200+ restaurants", "Live order tracking", "Special offers", "Dietary filters"],
   },
   {
     icon: Package,

@@ -9,11 +9,17 @@ export function HeroSection() {
     >
       {/* Background Orbs */}
       <div className="gradient-orb gradient-orb-1 -top-40 -left-40 animate-float" />
-      <div className="gradient-orb gradient-orb-2 top-1/3 right-0 animate-float" style={{ animationDelay: "2s" }} />
-      <div className="gradient-orb gradient-orb-3 bottom-0 left-1/3 animate-float" style={{ animationDelay: "4s" }} />
+      <div
+        className="gradient-orb gradient-orb-2 top-1/3 right-0 animate-float"
+        style={{ animationDelay: "2s" }}
+      />
+      <div
+        className="gradient-orb gradient-orb-3 bottom-0 left-1/3 animate-float"
+        style={{ animationDelay: "4s" }}
+      />
 
       {/* Grid Pattern Overlay */}
-      <div 
+      <div
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, hsl(260 68% 60%) 1px, transparent 0)`,
@@ -47,7 +53,8 @@ export function HeroSection() {
             </h1>
 
             <p className="text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto lg:mx-0 mb-8 animate-fade-up opacity-0 stagger-3">
-              A unified platform designed to make travel, food, logistics, and hotel booking effortless for everyone across Sri Lanka.
+              A unified platform designed to make travel, food, logistics, and
+              hotel booking effortless for everyone across Sri Lanka.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up opacity-0 stagger-4">
@@ -65,34 +72,56 @@ export function HeroSection() {
             {/* Stats */}
             <div className="flex gap-8 mt-12 justify-center lg:justify-start animate-fade-up opacity-0 stagger-5">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-foreground">50K+</div>
-                <div className="text-sm text-primary-foreground/60">Active Users</div>
+                <div className="text-3xl font-bold text-primary-foreground">
+                  5K+
+                </div>
+                <div className="text-sm text-primary-foreground/60">
+                  Active Users
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-foreground">1000+</div>
-                <div className="text-sm text-primary-foreground/60">Partner Drivers</div>
+                <div className="text-3xl font-bold text-primary-foreground">
+                  100+
+                </div>
+                <div className="text-sm text-primary-foreground/60">
+                  Partner Drivers
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-foreground">500+</div>
-                <div className="text-sm text-primary-foreground/60">Restaurants</div>
+                <div className="text-3xl font-bold text-primary-foreground">
+                  100+
+                </div>
+                <div className="text-sm text-primary-foreground/60">
+                  Restaurants
+                </div>
               </div>
             </div>
           </div>
 
           {/* Phone Mockup */}
           <div className="flex-1 relative animate-fade-up opacity-0 stagger-4">
-            <div className="relative mx-auto w-72 md:w-80 lg:w-96">
+            <div className="relative mx-auto w-72 md:w-80 lg:w-96 animate-phoneFloat">
               {/* Glow Effect */}
               <div className="absolute inset-0 gradient-primary rounded-[3rem] blur-3xl opacity-30 animate-pulse-glow" />
-              
+
               {/* Phone Frame */}
-              <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-[3rem] p-3 shadow-2xl">
-                <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-[2.5rem] overflow-hidden aspect-[9/19]">
-                  {/* Screen Content */}
-                  <div className="h-full flex flex-col items-center justify-center p-6 text-center">
-                    <div className="text-4xl font-bold text-primary-foreground mb-2">MUVÉ</div>
-                    <div className="text-sm text-primary-foreground/60 mb-8">Your Complete Service Platform</div>
-                    
+              <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-[3rem] p-3 shadow-2xl animate-phoneRotate">
+                <div className="relative rounded-[2.5rem] overflow-hidden aspect-[9/19]">
+                  <div
+                    className="absolute inset-0 animate-screenGradient bg-[length:300%_300%]
+                  bg-gradient-to-br from-[#7145D6] via-[#9b7bff] to-[#4a2db1] opacity-90"
+                  ></div>
+                  <div className="absolute inset-0 bg-black/30"></div>
+
+                  <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-center">
+                    <div className="text-4xl font-bold text-white mb-2 tracking-wide">
+                      MUVÉ
+                    </div>
+
+                    <div className="text-sm text-white/80 mb-8">
+                      Your Complete Service Platform
+                    </div>
+
                     {/* App Icons Grid */}
                     <div className="grid grid-cols-2 gap-4 w-full max-w-[200px]">
                       {[
@@ -103,11 +132,17 @@ export function HeroSection() {
                       ].map((item, i) => (
                         <div
                           key={item.label}
-                          className="glass rounded-2xl p-4 text-center hover:scale-105 transition-transform cursor-pointer"
+                          className="
+                          glass rounded-2xl p-4 text-center 
+                          hover:scale-105 hover:shadow-xl
+                          active:scale-95 transition-all cursor-pointer
+                        "
                           style={{ animationDelay: `${i * 0.1}s` }}
                         >
                           <div className="text-2xl mb-1">{item.icon}</div>
-                          <div className="text-xs text-primary-foreground/80">{item.label}</div>
+                          <div className="text-xs text-white/80">
+                            {item.label}
+                          </div>
                         </div>
                       ))}
                     </div>

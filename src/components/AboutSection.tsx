@@ -67,7 +67,7 @@ export function AboutSection() {
             <div className="grid grid-cols-3 gap-4">
               {[
                 { value: "4+", label: "Services" },
-                { value: "9+", label: "Cities" },
+                { value: "3+", label: "Cities" },
                 { value: "24/7", label: "Support" },
               ].map((stat) => (
                 <div
